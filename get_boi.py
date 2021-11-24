@@ -29,4 +29,5 @@ for x in range(1, 21):
         if image['src'].startswith( 'https' ):
             #print(image['src'].replace("-308x420", ""))
             image_src = image['src'].replace("-308x420", "")
+            image_src = image_src.replace("-420x308", "")
             print(image_src)
